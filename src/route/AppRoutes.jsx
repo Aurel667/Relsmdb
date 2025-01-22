@@ -16,6 +16,10 @@ export const AppRouter = createBrowserRouter([
             {
                 path : "/film/:filmid",
                 element : <Single/>
+            },
+            {
+                path : "/*",
+                element : <ErrorFallback/>
             }
         ]
     }
